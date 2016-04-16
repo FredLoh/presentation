@@ -1,26 +1,75 @@
-# Talk
+# Removing Currying from Swift
 
-* Place your talk here
-* Remember, no more than 20 slides
-* And exactly 15 seconds per slide
-* That gives you exactly 5 minutes for your talk!
+* Frederik Lohner
+* David Zhuzhunashvili
+* Derek Holland
+* Justin Olson
 
-# Second slide
+# What is Swift
 
-```python
-def blah():
-	"""The blah function demonstrates doc strings"""
-	return 42
+* Swift is Apples new programming language, it allows you to program for all Apple platforms.
+* iOS, OS X, tvOS, watchOS.
+* First introduced 2014
+* Open Source as of Dec 3 2015!!
+
+# What are the goals of Swift?
+
+* Easy to understand
+
+```swift
+func greetings(name: String) -> String {
+    return "Greetings \(name)!"
+}
 ```	
 
-* The content of the second slide is here
-* Here you would talk about the above code
-* Hopefully you have a far more interesting example :)
+# Swift is fairly Pythonic in nature
 
-# Third slide
+```swift
+for car in cars {
+    print(car)
+}
 
-* This is the third slide
-* There are 17 more slides after this one
-* Good luck with your presentation!
+for (key, value) in someDictionary {
+	print("Key: \(key) has value \(value).")
+}
+```	
+
+# Where are Swift changes discussed
+
+* 
+
+# What are the format of Swift changes
+
+* 
+
+# What is Currying
+
+* Break an operation down to multiple functions based on inputs
+
+# Example
+```swift
+func curried(x: Int)(y: String) -> Float {
+	return Float(x) + Float(y)!
+}
+```
+
+# Example cont
+
+* So this would break down to
+
+```swift
+func curried(x: Int) -> (String) -> Float {
+    return {(y: String) -> Float in
+      return Float(x) + Float(y)!
+    }
+}
+```
+
+# Why would we remove currying
+
+* Often causes issues with other features of a language without any real benefit
+* Causes ambiguous syntax
+
+
 
 
