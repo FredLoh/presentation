@@ -171,5 +171,5 @@ would be a shorthand for:
 	{ x in foo(x, bar: 2) }
 	```	
 
-Increasing readability
+Greatly increasing readability
 
