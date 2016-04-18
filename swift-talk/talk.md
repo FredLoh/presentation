@@ -89,6 +89,8 @@ Categories:
 
 * Yes, it allows the user to pass one variable at a time in case all the variables are not known, but this is not too helpful.
 
+* This is not too helpful because this does not happen very often and there are many ways to avoid the issue without currying.
+
 
 # Example
 ```swift
