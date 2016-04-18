@@ -44,6 +44,12 @@ Mailing lists:
  
 # Community Structure
 
+Advancing the Swift programming language with a coherent, clear view of its evolution requires strong leadership. The leadership is taken from the community, and works closely with the much broader group of contributors and users. 
+
+There is also a code of conduct working group to help in matters of community, culture, and the code of conduct. Most importantly, everyone that uses Swift is a valued member of our extended community.
+
+# Community Structure (cont.)
+
 * Project Lead: Apple Inc.
 
 * Core Team: Small group of engineers responsible for strategic decision (currently all Apple engineers)
@@ -76,6 +82,8 @@ Categories:
 # What is Currying
 
 * Break an operation down to multiple functions based on inputs
+* More specifically, translating the evaluation of a multiple-argument function into evaluating a sequence of functions, each with one argument
+
 
 # Can Currying be Useful?
 
@@ -122,19 +130,21 @@ func curry<A, B, C>(f: (A, B) -> C) -> (A -> (B -> C)) {
 
 # Impact on the language
 
-* Removing a language feature will affect the existing code, but not enough to bar us from doing it.
+* Removing a language feature will affect the existing code.
+
+* The effects on the existing code, however, are not noticeable enough to bar the removal of currying.
 
 # What Warrants the Removal?
 
-* Currying is of very small utility.
+* Currying is of very small utility in Swift and can only be applied in very specific cases.
 
 * Currying goes against emerging language practice.
 
 # What Warrants the Removal? (cont.)
 
-* Swift strives to be an easy to understand language.
+* Swift strives to be an easy to understand language, and currying does quite the opposite by adding confusion over keyword rules and declaration names of functions
 
-* Removal of currying will greatly simplify the language.
+* Removal of currying will greatly simplify the language and remove this ambiguity, bringing Swift closer to what it strives for
 
 # Alternatives to Removal
 
