@@ -185,10 +185,3 @@ would be a shorthand for:
 	```	
 
 Greatly increasing readability
-
-# Sources
-
-* https://swift.org/community/
-
-* https://github.com/apple/swift-evolution
-
