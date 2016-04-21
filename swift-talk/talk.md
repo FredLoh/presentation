@@ -12,6 +12,7 @@
 * First introduced 2014
 * Open Source as of Dec 3 2015!!
 
+
 # What are the goals of Swift?
 
 * Easy to understand
@@ -52,7 +53,7 @@ Mailing lists:
 
 * Commiter: Anybody who has commit access to the Swift code base
 
-* Contributer: Anyone who contributes a patch or helps with code review.
+* Contributor: Anyone who contributes a patch or helps with code review.
 
 # What are the format of Swift changes
 
@@ -172,4 +173,10 @@ would be a shorthand for:
 	```	
 
 Greatly increasing readability
+
+# Sources
+
+* https://swift.org/community/
+
+* https://github.com/apple/swift-evolution
 
